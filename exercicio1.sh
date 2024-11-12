@@ -21,3 +21,10 @@ mkdir backup
 
 # Mover ficheiros para pasta backup 
 mv *.txt backup/
+
+
+git init
+git add exercicio1.sh
+git commit -m "Adicionar exercício 1"
+git remote add https://github.com/Srteixeira1992/Ex1---ScriptingCiteforma2004.git
+git push -u origin main
