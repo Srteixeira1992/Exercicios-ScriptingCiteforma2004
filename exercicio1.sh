@@ -11,7 +11,6 @@ cd Ex1---ScriptingCiteforma2004
 
 # Listar
 ls
-exercicio1.sh  README.md
 
 # Criar ficheros .txt
 touch teste1.txt teste2.txt
