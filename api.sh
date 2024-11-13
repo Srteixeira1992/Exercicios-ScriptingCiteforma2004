@@ -23,3 +23,4 @@ if [ -s "$nome_ficheiro" ]; then
 else
   echo "Erro ao obter os dados do tempo. Verifique a cidade e a chave da API."
   rm "$nome_ficheiro" 
+fi
