@@ -8,7 +8,7 @@ fi
 
 # Define a cidade e a chave da API
 cidade="$1"
-api_key="202d038326ba8613500e8d4c023d08c0"  # Substitua pela sua chave de API
+api_key="202d038326ba8613500e8d4c023d08c0"  
 
 # Obtem a data e hora atual para o nome do ficheiro
 data_atual=$(date +"%Y-%m-%d_%H-%M-%S")
