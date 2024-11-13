@@ -1,0 +1,25 @@
+read -p "Digite um caminho "
+
+echo "Caminho passado por parâmetro"
+echo $dir
+
+
+if [ -d "$dir" ]; then
+	echo "O caminho é um diretório"
+	cd "$dir"
+else
+	echo "O caminho não é um diretório"
+	exit 1
+fi
+
+read -p "Digite o nome do ficheiro: " file
+
+if [ -f "file" ]; then
+wc -l < $file
+wc -w < $file
+
+	echo "Linhas que contém erros"
+	grep -i "erro" "$file"
+else
+	echo "Ficheiro não encontrado."
+fi
