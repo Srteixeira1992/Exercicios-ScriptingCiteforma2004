@@ -1,29 +1,36 @@
 #!/bin/bash
 
-# Caminho para o diretório
-cd Citeforma_Análise_de_Dados
+# Verifica se o diretório foi fornecido como argumento
+if [ -z "$1" ]; then
+  echo "Por favor, forneça o caminho de um diretório como argumento."
+  exit 1
+fi
 
-cd "10806 - Linguagens de scripting e linha de comandos"
+# Navega até o diretório especificado pelo utilizador
+diretorio="$1"
+if [ -d "$diretorio" ]; then
+  cd "$diretorio" || exit
+  echo "Navegando para o diretório: $diretorio"
+else
+  echo "O diretório especificado não existe."
+  exit 1
+fi
 
-cd "Aula 4"
+# Lista todos os ficheiros e diretórios presentes no diretório atual
+echo "Conteúdo do diretório $diretorio:"
+ls -la
 
-cd Ex1---ScriptingCiteforma2004
+# Cria um subdiretório chamado "backup" se ainda não existir
+if [ ! -d "backup" ]; then
+  mkdir "backup"
+  echo "Subdiretório 'backup' criado."
+else
+  echo "O subdiretório 'backup' já existe."
+fi
 
-# Listar
-ls
+# Move todos os ficheiros .txt para o diretório "backup"
+echo "Movendo ficheiros .txt para o diretório 'backup'..."
+mv *.txt backup/ 2>/dev/null
 
-# Criar ficheros .txt
-touch teste1.txt teste2.txt
-
-# Criar diretório backup
-mkdir backup
-
-# Mover ficheiros para pasta backup 
-mv *.txt backup/
-
-
-git init
-git add exercicio1.sh
-git commit -m "Adicionar exercício 1"
-git remote add https://github.com/Srteixeira1992/Ex1---ScriptingCiteforma2004.git
-git push -u origin main
+# Confirmação da operação
+echo "Operação concluída. Ficheiros .txt movidos para 'backup' (se existirem)."
