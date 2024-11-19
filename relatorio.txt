@@ -1,0 +1,7 @@
+Relatório do Diretório - Tue, Nov 19, 2024 11:50:28 AM
+-----------------------------------
+Número total de ficheiros (excluindo .sh): 14
+Nome do maior ficheiro: 10806
+Tamanho do maior ficheiro: 109K
+Tamanho médio dos ficheiros: 16216.4 bytes
+Previsão do tempo atual: Palmela, Portugal: 🌫  +12°C

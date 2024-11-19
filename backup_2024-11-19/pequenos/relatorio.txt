@@ -1,0 +1,7 @@
+Relatório do Diretório - Tue, Nov 19, 2024 11:49:38 AM
+-----------------------------------
+Número total de ficheiros (excluindo .sh): 12
+Nome do maior ficheiro: 10806
+Tamanho do maior ficheiro: 109K
+Tamanho médio dos ficheiros: 18835.8 bytes
+Previsão do tempo atual: 
